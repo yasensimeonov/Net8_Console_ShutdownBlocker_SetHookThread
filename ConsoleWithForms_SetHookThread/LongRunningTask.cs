@@ -52,6 +52,8 @@
 
         private void DisposeData()
         {
+            _currentTimeFrame = DateTime.Now;
+
             _streamWriter.WriteLine();
             _streamWriter.WriteLine();
             _streamWriter.Flush();
